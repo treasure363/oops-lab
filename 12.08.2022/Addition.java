@@ -2,7 +2,7 @@
 /*
  * Method 1: Using Arithmetic Operator
  * Method 2: Without Using Arithmetic Operator
- * Method 3: Using Bitwise Operators
+ * Method 3: Using Bitwise Operators [Full Adder]
  * Method 4: Using Recursion
  */
 import java.util.Scanner;
@@ -15,11 +15,11 @@ public class Addition {
         a = ob.nextInt();
         b = ob.nextInt();
         
-        method1(a, b);
+        method1(a, b);  //Simple Arithmetic Operator
         method2(a, b);  //Doesn't work for negative numbers
-        method3(a, b);
+        method3(a, b);  //Bitwise Operators [Full Adder]
         System.out.print("Sum of " + a + " + " + b + " = ");
-        method4(a, b);
+        method4(a, b);  //Recursion
         ob.close();
     }
 

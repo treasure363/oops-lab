@@ -13,10 +13,10 @@ public class Swap {
         System.out.println("Input Two Integers to Swap: ");
         a = ob.nextInt();
         b = ob.nextInt();
-        method1(a, b);
-        method2(a, b);
-        method3(a, b);
-        method4(a, b);
+        method1(a, b);  //Using Third Variable
+        method2(a, b);  //Without Using Third Variable
+        method3(a, b);  //XOR
+        method4(a, b);  //Single line swap
         ob.close();
     }
 
@@ -51,7 +51,7 @@ public class Swap {
     public static void method4(int a, int b) {
         System.out.println("Method 4: Without Using XOR in a single line swap");
         System.out.println("Before Swapping\na: " + a + "\tb: " + b);
-        a = (a ^ b) -  (b = a);     //(a ^ b) -  (b = a) also works
+        a = (a + b) -  (b = a);     //(a ^ b) -  (b = a) also works
         System.out.println("After Swapping\na: " + a + "\tb: " + b);
     }
 
